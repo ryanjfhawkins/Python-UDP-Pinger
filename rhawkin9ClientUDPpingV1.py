@@ -38,17 +38,17 @@ for pings in range(200):
         
         #Ends timer
         end = time.time()
-        RTTms = (end - start) * 1000
+        RTT = (end - start) * 1000
             
-        x.append(RTTms)
+        x.append(RTT)
             
-        total = total + RTTms
+        total = total + RTT
         
-        if RTTms < min:
-            min = RTTms
+        if RTT < min:
+            min = RTT
             
         if RTTms > max:
-            max = RTTms    
+            max = RTT    
             
         data = data + 1   
         
