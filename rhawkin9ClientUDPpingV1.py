@@ -1,3 +1,10 @@
+#This Program sends 'n' pings to and times each one. If it takes longer than 2 seconds then it gets timed out
+#It records the times for the 'n' pings and calculates the maximum, minimum, average, and standard deviation of succesful pings in milliseconds
+#It also calculates and shows the packet loss rate 
+#Finally it graphs the RTT vs Number of Pings and outputs it in a histogram
+
+
+
 import time
 from socket import *
 import numpy as np
@@ -10,9 +17,10 @@ data = 0
 loss = 0
 x = []
 
+n = 100
     
 #Sends 10 pings
-for pings in range(200):
+for pings in range(n):
     
     #Create UDP socket
     clientSocket = socket(AF_INET, SOCK_DGRAM)
