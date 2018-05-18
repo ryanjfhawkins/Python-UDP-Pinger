@@ -19,7 +19,7 @@ x = []
 
 n = 100
     
-#Sends 10 pings
+#Sends n pings
 for pings in range(n):
     
     #Create UDP socket
